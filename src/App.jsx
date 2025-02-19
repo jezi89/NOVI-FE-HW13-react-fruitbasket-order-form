@@ -6,6 +6,9 @@ function App() {
   return (
     <>
         <h1>Fruitmand bezorgservice</h1>
+        <Button/>
+        <Button/>
+        <Button/>
     </>
   )
 }
