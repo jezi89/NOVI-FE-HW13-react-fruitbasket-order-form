@@ -17,6 +17,7 @@ function Button () {
             <button onClick={countdown}>-</button>
             <p>{count}</p>
             <button onClick={countup}>+</button>
+                Kan
             </div>
     </>
     )
