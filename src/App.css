@@ -2,6 +2,9 @@ html {
     text-align: center;
 }
 
+body {
+    background-color: #0C7A26;
+}
 main {
     display: flex;
     justify-content: center;
@@ -14,24 +17,31 @@ main {
     align-items: stretch;
     gap: 0.5em;
 
+
 }
 
 .counters {
     display: flex;
     align-items: center;
     padding: 0 10px;
-
+    scale: 1.5;
 }
 
 .fruittype {
-    display: flex;    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    background-color: #A1E2ABFF;
     border: 2px solid black;
     border-radius: 8px;
+    padding: 0 85px;
+
 }
+
 
 button {
     margin:10px;
+
 }
 
 .button-container button {
