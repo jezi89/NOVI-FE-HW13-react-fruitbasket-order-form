@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Fruitcard from "./components/Fruitcard.jsx";
 import Resetbutton from "./components/Resetbutton.jsx";
+import Orderform from "./components/Orderform.jsx";
 
 function App() {
     const fruits = ["Aardbeien", "Bananen", "Appels", "Kiwi's"];
@@ -50,7 +51,13 @@ function App() {
             ))}
             <Resetbutton onReset={handleReset} />
                 </section>
+
             </main>
+            <footer>
+                <section className="formSection">
+                    < Orderform />
+                </section>
+            </footer>
         </>
     );
 }
