@@ -1,16 +1,20 @@
 import { useState } from "react";
-import "./App.css";
+import "./App.scss";
 import Fruitcard from "./components/Fruitcard.jsx";
 import Resetbutton from "./components/Resetbutton.jsx";
 import Orderform from "./components/Orderform.jsx";
+import StrawberryIcon from "./components/StrawberryIcon.jsx";
+import BananaIcon from "./components/BananaIcon.jsx";
+import AppleIcon from "./components/AppleIcon.jsx";
+import KiwiIcon from "./components/KiwiIcon.jsx";
 
 function App() {
     const fruits = ["Aardbeien", "Bananen", "Appels", "Kiwi's"];
-    const fruitEmojis = {
-        "Aardbeien": "🍓",
-        "Bananen": "🍌",
-        "Appels": "🍏",
-        "Kiwi's": "🥝"
+    const fruitIcons = {
+        "Aardbeien": <StrawberryIcon size={24} />,
+        "Bananen": <BananaIcon size={24} />,
+        "Appels": <AppleIcon size={24} />,
+        "Kiwi's": <KiwiIcon size={24} />,
     };
 
 
@@ -40,7 +44,7 @@ function App() {
                 <section className="fruitlist">
             {fruits.map((fruit, index) => (
                 <article className="fruittype" key={index}>
-                    {fruitEmojis[fruit]} {fruit}{" "}
+                    {fruitIcons[fruit]} {fruit}{" "}
                     <div className="counters">
                     <Fruitcard             count={fruitCounts[fruit]}
                                            onIncrement={() => updateCount(fruit, 1)}

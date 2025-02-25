@@ -1,0 +1,92 @@
+@use 'scss/styles' as *;
+
+html {
+    text-align: center;
+}
+
+body {
+    background-color: $primary-color;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+.form-label {
+    font-weight: 600;
+    margin-top: 0.75rem;
+    min-width: 120px;
+    display: inline-block;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.fruitlist {
+    display: flex;
+
+    flex-direction: column;
+    min-width: 20vw;
+    align-items: stretch;
+    gap: 0.5em;
+    margin: 5px;
+}
+
+.fruittype {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $secondary-color;
+    border: 2px solid $black;
+    border-radius: 8px;
+    padding: 0 10px;
+    gap: 1em;
+
+}
+
+.counters {
+    display: flex;
+    align-items: center;
+    padding: 0 3px;
+}
+
+
+.resetter, .submitbtn {
+    background: $accent-color;
+    border: 1px solid $accent-color;
+    box-shadow: $button-shadow;
+    color: $white;
+    font-family: $primary-font;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+
+    &:hover {
+        background-color: $accent-hover;
+        box-shadow: $hover-shadow;
+        transition: all $transition-speed ease;
+        transform: translateY(-1px);
+    }
+
+    &:active {
+        background-color: $accent-active;
+        box-shadow: $active-shadow;
+        transform: translateY(1px);
+        transition: all 0.1s ease;
+    }
+}
+

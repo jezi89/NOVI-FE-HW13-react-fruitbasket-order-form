@@ -1,0 +1,39 @@
+@use '../scss/styles' as *;
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+
+.count {
+    margin: 0;
+    text-align: center;
+}
+
+button {
+    margin:10px;
+
+}
+
+.button-container button {
+    margin: 0 5px;
+}
+
+.counterbutton {
+    margin: 10px;
+    padding: 5px 15px;
+    border: 1px solid $black;
+    background-color: $white;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $tertiary-color;
+        transition: all $transition-speed ease;
+    }
+}
+

@@ -63,10 +63,11 @@ export default function Orderform () {
                             <label htmlFor="formAge" className="form-label">Leeftijd: </label>
                             <input
                                 type="number"
+                                min= "12"
                                 className="form-control"
                                 id="formAge"
                                 name="age"
-                                placeholder="Only 18+"
+                                placeholder="Only 12+"
                                 value={formState.age}
                                 onChange={changeHandler}
                             />
@@ -158,7 +159,7 @@ export default function Orderform () {
                             Akkoord met de voorwaarden?
                         </label>
                         </div>
-                        <button type="submit" className="btn btn-primary">
+                        <button type="submit" className="submitbtn">
                             Submit
                         </button>
                 </fieldset>
