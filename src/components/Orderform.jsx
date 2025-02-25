@@ -29,7 +29,7 @@ export default function Orderform () {
 
     return (
         <div className="container mt-5">
-            <h1>Groentebox Bestelformulier</h1>
+            <h1>Fruitmand Bestelformulier</h1>
             <form onSubmit={submitHandler}>
                 <fieldset className="border p-4 rounded">
                     <legend className="w-auto px-2">Gegevens: </legend>
